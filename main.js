@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Helper to open mail client with prefilled content
   function openMailClient({ name, email, company, phone, message }) {
-    const to = 'Curafehealth@gmail.com';
+    const to = 'info@curafehealth.com';
     const subject = encodeURIComponent(`Website contact from ${name}`);
     const bodyLines = [];
     bodyLines.push(`Name: ${name}`);
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cfFeedback) {
       cfFeedback.style.display = 'block';
       cfFeedback.style.color = '#0a6f2a';
-      cfFeedback.textContent = 'Opening your email client. If nothing opens, please email Curafehealth@gmail.com directly.';
+      cfFeedback.textContent = 'Opening your email client. If nothing opens, please email info@curafehealth.com directly.';
     }
     window.location.href = mailto;
   }

@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+
+Sitemap: https://curafehealth.com/sitemap.xml
+
+# Allow all bots full access
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+
+# Prevent crawling of admin or private areas if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /assets/private/
